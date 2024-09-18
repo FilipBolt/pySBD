@@ -146,3 +146,8 @@ def kk_default_fixture():
 def sk_default_fixture():
     sk_segmenter = pysbd.Segmenter(language="sk", clean=False, char_span=False)
     return sk_segmenter
+
+@pytest.fixture()
+def hr_default_fixture():
+    hr_segmenter = pysbd.Segmenter(language="hr", clean=False, char_span=False)
+    return hr_segmenter
